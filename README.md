@@ -4,17 +4,33 @@ The plugin uses eclipselink to generate DDL from JPA entities.
 
 * command-line execution
 
+
+```
+#!text
+
     mvn process-classes
+```
+
 
 * maven settings.xml modifications
+
+
+```
+#!xml
 
     <pluginGroups>
         ...
         <pluginGroup>us.hornerscorners.mojo</pluginGroup>
         ...
     </pluginGroups>
+```
+
 
 * maven pom.xml modifications
+
+
+```
+#!xml
 
     <plugin>
         <groupId>us.hornerscorners.mojo</groupId>
@@ -43,6 +59,8 @@ The plugin uses eclipselink to generate DDL from JPA entities.
            <!-- jdbc driver, domain classes -->
         </dependencies>
     </plugin>
+```
+
 
 The plugin is available from the Maven Central Repository, thanks to
 [Sonatype OSS Repository Hosting](https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide).
