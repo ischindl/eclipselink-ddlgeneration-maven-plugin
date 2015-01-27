@@ -9,7 +9,7 @@
     <description>
         Generates DDL as part of a maven build.
     </description>
-    <url>https://bitbucket.org/boraxhacker/eclipselink-ddl-generation-maven-plugin</url>
+    <url>https://bitbucket.org/boraxhacker/eclipselink-ddlgeneration-maven-plugin</url>
     <inceptionYear>2012</inceptionYear>
     <developers>
         <developer>
@@ -36,17 +36,17 @@
     </licenses>
     <scm>
         <connection>
-            scm:git:https://bitbucket.org/boraxhacker/eclipselink-ddl-generation-maven-plugin.git
+            scm:git:https://bitbucket.org/boraxhacker/eclipselink-ddlgeneration-maven-plugin.git
         </connection>
         <developerConnection>
-            scm:git:ssh://git@bitbucket.org/boraxhacker/eclipselink-ddl-generation-maven-plugin.git
+            scm:git:ssh://git@bitbucket.org/boraxhacker/eclipselinkddlgeneration-maven-plugin.git
         </developerConnection>
-        <url>https://bitbucket.org/boraxhacker/eclipselink-ddl-generation-maven-plugin/src</url>
+        <url>https://bitbucket.org/boraxhacker/eclipselink-ddlgeneration-maven-plugin/src</url>
         <tag>HEAD</tag>
     </scm>
     <issueManagement>
         <system>bitbucket</system>
-        <url>https://bitbucket.org/boraxhacker/eclipselink-ddl-generation-maven-plugin/issues</url>
+        <url>https://bitbucket.org/boraxhacker/eclipselink-ddlgeneration-maven-plugin/issues</url>
     </issueManagement>
     <distributionManagement>
         <snapshotRepository>
