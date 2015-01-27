@@ -1,9 +1,10 @@
 The plugin uses eclipselink to generate DDL from JPA entities.
 
-* [Maven Generated Site](http://boraxhacker.bitbucket.org/eclipselink-ddlgeneration-maven-plugin)
+# Usage #
 
-* command-line execution
+[Maven Generated Site](http://boraxhacker.bitbucket.org/eclipselink-ddlgeneration-maven-plugin)
 
+## command-line ##
 
 ```
 #!text
@@ -11,9 +12,7 @@ The plugin uses eclipselink to generate DDL from JPA entities.
     mvn process-classes
 ```
 
-
-* maven settings.xml modifications
-
+## settings.xml ##
 
 ```
 #!xml
@@ -25,9 +24,7 @@ The plugin uses eclipselink to generate DDL from JPA entities.
     </pluginGroups>
 ```
 
-
-* maven pom.xml modifications
-
+## pom.xml ##
 
 ```
 #!xml
@@ -60,7 +57,6 @@ The plugin uses eclipselink to generate DDL from JPA entities.
         </dependencies>
     </plugin>
 ```
-
 
 The plugin is available from the Maven Central Repository, thanks to
 [Sonatype OSS Repository Hosting](http://central.sonatype.org/pages/ossrh-guide.html).
