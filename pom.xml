@@ -39,7 +39,7 @@
             scm:git:https://bitbucket.org/boraxhacker/eclipselink-ddlgeneration-maven-plugin.git
         </connection>
         <developerConnection>
-            scm:git:ssh://git@bitbucket.org/boraxhacker/eclipselinkddlgeneration-maven-plugin.git
+            scm:git:ssh://git@bitbucket.org/boraxhacker/eclipselink-ddlgeneration-maven-plugin.git
         </developerConnection>
         <url>https://bitbucket.org/boraxhacker/eclipselink-ddlgeneration-maven-plugin/src</url>
         <tag>HEAD</tag>
