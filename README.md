@@ -57,10 +57,10 @@ The plugin uses eclipselink to generate DDL from JPA entities.
         </dependencies>
     </plugin>
 ```
-[]()
-[]()
-[]()
-[]()
-[]()
+[]()     
+[]()     
+[]()     
+[]()     
+[]()     
 The plugin is available from the Maven Central Repository, thanks to
 [Sonatype OSS Repository Hosting](http://central.sonatype.org/pages/ossrh-guide.html).
