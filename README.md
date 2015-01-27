@@ -1,13 +1,12 @@
-
 The plugin uses eclipselink to generate DDL from JPA entities.
 
-[Maven Generated Site](http://boraxhacker.bitbucket.org/eclipselink-ddlgeneration-maven-plugin)
+* [Maven Generated Site](http://boraxhacker.bitbucket.org/eclipselink-ddlgeneration-maven-plugin)
 
-command-line execution
+* command-line execution
 
     mvn process-classes
 
-maven settings.xml modifications
+* maven settings.xml modifications
 
     <pluginGroups>
         ...
@@ -15,7 +14,7 @@ maven settings.xml modifications
         ...
     </pluginGroups>
 
-maven pom.xml modifications
+* maven pom.xml modifications
 
     <plugin>
         <groupId>us.hornerscorners.mojo</groupId>
