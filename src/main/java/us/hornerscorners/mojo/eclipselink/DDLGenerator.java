@@ -1,11 +1,24 @@
 /*
- * @(#)DDLGenerator.java
- * Date 2012-07-27
- * Version 1.0
- * Author Jim Horner
- * Copyright (c)2012
+ * #%L
+ * EclipseLink DDL Generation Maven Plugin
+ * %%
+ * Copyright (C) 2012 - 2015 Jim Horner
+ * %%
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>.
+ * #L%
  */
-
 
 package us.hornerscorners.mojo.eclipselink;
 
@@ -19,7 +32,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import org.eclipse.persistence.config.PersistenceUnitProperties;
-
 
 /**
  * Class description
@@ -40,6 +52,8 @@ public class DDLGenerator extends Thread {
      * Constructs ...
      *
      *
+     *
+     * @param unitName
      * @param cl
      */
     public DDLGenerator(String unitName, ClassLoader cl) {
@@ -59,7 +73,7 @@ public class DDLGenerator extends Thread {
      */
     private Map<String, Object> buildProperties() {
 
-        Map<String, Object> props = new HashMap<>();
+        Map<String, Object> props = new HashMap<String, Object>();
 
         // override with local transaction
         props.put(PersistenceUnitProperties.TRANSACTION_TYPE, "RESOURCE_LOCAL");
@@ -68,10 +82,10 @@ public class DDLGenerator extends Thread {
         props.put(PersistenceUnitProperties.VALIDATION_MODE, "NONE");
 
         // Enable DDL Generation
-        props.put(PersistenceUnitProperties.DDL_GENERATION,
-                  PersistenceUnitProperties.DROP_AND_CREATE);
-        props.put(PersistenceUnitProperties.DDL_GENERATION_MODE,
-                  PersistenceUnitProperties.DDL_SQL_SCRIPT_GENERATION);
+        props.put(PersistenceUnitProperties.DDL_GENERATION, PersistenceUnitProperties
+            .DROP_AND_CREATE);
+        props.put(PersistenceUnitProperties.DDL_GENERATION_MODE, PersistenceUnitProperties
+            .DDL_SQL_SCRIPT_GENERATION);
 
         return props;
     }
@@ -88,13 +102,12 @@ public class DDLGenerator extends Thread {
 
         try {
 
-            emf = Persistence.createEntityManagerFactory(this.unitName,
-                    this.properties);
+            emf = Persistence.createEntityManagerFactory(this.unitName, this.properties);
 
             try {
-                
+
                 em = emf.createEntityManager();
-                
+
             } finally {
 
                 if (em != null) {
@@ -118,8 +131,7 @@ public class DDLGenerator extends Thread {
      */
     public void setCreateFile(String val) {
 
-        this.properties.put(PersistenceUnitProperties.CREATE_JDBC_DDL_FILE,
-                            val);
+        this.properties.put(PersistenceUnitProperties.CREATE_JDBC_DDL_FILE, val);
     }
 
     /**
@@ -189,7 +201,7 @@ public class DDLGenerator extends Thread {
             dir.mkdirs();
         }
 
-        this.properties.put(PersistenceUnitProperties.APP_LOCATION,
-                            dir.getAbsolutePath());
+        this.properties
+            .put(PersistenceUnitProperties.APP_LOCATION, dir.getAbsolutePath());
     }
 }
