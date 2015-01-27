@@ -63,4 +63,4 @@ The plugin uses eclipselink to generate DDL from JPA entities.
 
 
 The plugin is available from the Maven Central Repository, thanks to
-[Sonatype OSS Repository Hosting](https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide).
+[Sonatype OSS Repository Hosting](http://central.sonatype.org/pages/ossrh-guide.html).
