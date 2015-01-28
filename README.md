@@ -2,7 +2,7 @@ The plugin uses eclipselink to generate DDL from JPA entities.
 
 # Usage #
 
-[Maven Generated Site](http://boraxhacker.bitbucket.org/eclipselink-ddlgeneration-maven-plugin)
+## [Maven Generated Site](http://boraxhacker.bitbucket.org/eclipselink-ddlgeneration-maven-plugin/maven-site) ##
 
 ## command-line ##
 
