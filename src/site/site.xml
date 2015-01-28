@@ -45,7 +45,7 @@
         <menu name="Reports" ref="reports" inherit="none"/>
 
         <menu name="Links" inherit="none" inheritAsRef="true">
-            <item name="Bitbucket Homepage" href="https://bitbucket.org/boraxhacker" />
+            <item name="Other Projects" href="https://bitbucket.org/boraxhacker" />
         </menu>
 
     </body>
