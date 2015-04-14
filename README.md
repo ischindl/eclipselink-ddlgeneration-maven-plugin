@@ -32,7 +32,7 @@ The plugin uses eclipselink to generate DDL from JPA entities.
     <plugin>
         <groupId>us.hornerscorners.mojo</groupId>
         <artifactId>eclipselink-ddlgeneration-maven-plugin</artifactId>
-        <version>1.4</version>
+        <version>1.8</version>
         <configuration>
             <jdbcUrl>jdbc:...your db connect url ...</jdbcUrl>
             <jdbcDriver>...your jdbc driver class ...</jdbcDriver>
