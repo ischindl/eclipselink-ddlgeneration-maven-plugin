@@ -89,7 +89,6 @@ public class EclipselinkDdlGenerationMojo extends AbstractMojo {
 
     /**
      * @parameter
-     * @required
      */
     private String jdbcPassword;
 
