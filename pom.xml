@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>us.hornerscorners.mojo</groupId>
     <artifactId>eclipselink-ddlgeneration-maven-plugin</artifactId>
-    <version>1.8</version>
+    <version>1.9-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
     <name>eclipselink-ddlgeneration-maven-plugin</name>
     <description>
@@ -41,7 +41,7 @@
             scm:git:ssh://git@bitbucket.org/boraxhacker/eclipselink-ddlgeneration-maven-plugin.git
         </developerConnection>
         <url>https://bitbucket.org/boraxhacker/eclipselink-ddlgeneration-maven-plugin/src</url>
-        <tag>eclipselink-ddlgeneration-maven-plugin-1.8</tag>
+        <tag>HEAD</tag>
     </scm>
     <issueManagement>
         <system>bitbucket</system>
